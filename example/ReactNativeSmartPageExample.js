@@ -10,7 +10,7 @@ import {
     Linking
 } from "react-native";
 import PropTypes from "prop-types";
-import SmartPage from "./src";
+import SmartPage from "react-native-smart-page";
 
 import testData from "./data";
 
