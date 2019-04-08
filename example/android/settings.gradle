@@ -1,0 +1,3 @@
+rootProject.name = 'ReactNativeSmartPageExample'
+
+include ':app'

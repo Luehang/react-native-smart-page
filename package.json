@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+  "name": "react-native-smart-page",
+  "description": "An easy and simple to use React Native component to render large to very large lists of swipable performant pages with intelligent scroll/swipe detection to cushion rough guestures. Supporting both iOS and Android. Free and made possible along with costly maintenance and updates by [Lue Hang](https://www.facebook.com/lue.hang) (the author).",
+  "keywords": [
+    "react-native-smart-page",
+    "react-native",
+    "pages",
+    "optimized rendering",
+    "smart rendering",
+    "optimized loading",
+    "large list",
+    "page list",
+    "scroll",
+    "translation",
+    "gesture responder",
+    "intelligent gesture detection",
+    "sensitive scrolling",
+    "swipable",
+    "animated",
+    "animation",
+    "ios",
+    "android"
+  ],
+  "homepage": "https://github.com/Luehang/react-native-smart-page",
+  "author": {
+    "name": "Lue Hang",
+    "email": "lue_hang@hotmail.com",
+    "url": "https://www.luehangs.site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luehang/react-native-smart-page"
+  },
+  "bugs": {
+    "url": "https://github.com/Luehang/react-native-smart-page/issues"
+  },
+  "directories": {
+    "__tests__": "./__tests__",
+    "example": "./example",
+    "src": "./src"
+  },
+  "main": "./src/index.js",
+  "files": [
+    "/__tests__",
+    "/src",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react-native-easy-guesture-responder": "^1.1.0",
+    "react-native-scrolling": "^1.0.0",
+    "react-native-swipe-render": "^1.0.1"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.3",
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-native": "^3.5.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/example/"
+    ]
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/",
+    "test": "jest"
+  },
+  "license": "MIT"
+}
