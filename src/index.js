@@ -72,6 +72,15 @@ export default class SmartPage extends PureComponent {
         this.getItemLayout = this.getItemLayout.bind(this);
 
         this.scroller = this.createScrolling();
+
+        // componentWillMount
+        this.gestureResponder = createResponder({
+            onStartShouldSetResponder: (evt, gestureState) => true,
+            onResponderGrant: this.onResponderGrant,
+            onResponderMove: this.onResponderMove,
+            onResponderRelease: this.onResponderRelease,
+            onResponderTerminate: this.onResponderRelease
+        });
     }
 
     createScrolling () {
@@ -104,16 +113,6 @@ export default class SmartPage extends PureComponent {
                     position, offset, fraction
                 });
             }
-        });
-    }
-
-    componentWillMount () {
-        this.gestureResponder = createResponder({
-            onStartShouldSetResponder: (evt, gestureState) => true,
-            onResponderGrant: this.onResponderGrant,
-            onResponderMove: this.onResponderMove,
-            onResponderRelease: this.onResponderRelease,
-            onResponderTerminate: this.onResponderRelease
         });
     }
 
