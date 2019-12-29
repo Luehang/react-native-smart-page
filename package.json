@@ -56,7 +56,7 @@
     "prop-types": "^15.6.2",
     "react-native-easy-guesture-responder": "^1.1.2",
     "react-native-scrolling": "^1.0.2",
-    "react-native-swipe-render": "^3.0.1"
+    "react-native-swipe-render": "^3.0.2"
   },
   "peerDependencies": {
     "react": "*",
