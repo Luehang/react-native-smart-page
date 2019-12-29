@@ -450,7 +450,6 @@ export default class SmartPage extends PureComponent {
                     renderItem={this.renderRow}
                     onLayout={this.onLayout}
                     index={this.state.currIndex}
-                    enableAndroidScrollView={true}
                     loop={false}
                 />
             </View>
