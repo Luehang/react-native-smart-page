@@ -252,7 +252,7 @@ export default class SmartPage extends PureComponent {
         const data = this.props.data.length > 0
             ? this.props.data
             : this.props.children;
-        return this.getItemLayout(this.props.data, page).offset;
+        return this.getItemLayout(data, page).offset;
     }
 
     flingToPage (page, velocityX) {
