@@ -228,7 +228,7 @@ export default class SmartPage extends PureComponent {
                 newIndex = this.currentPage + 1;
             } else {
                 this.flingToPage(0, vx);
-                newIndex = 0
+                newIndex = 0;
             }
         } else {
             let page = this.currentPage;
