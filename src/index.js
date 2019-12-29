@@ -73,7 +73,7 @@ export default class SmartPage extends PureComponent {
 
         this.scroller = this.createScrolling();
 
-        // componentWillMount
+        // before mount
         this.gestureResponder = createResponder({
             onStartShouldSetResponder: (evt, gestureState) => true,
             onResponderGrant: this.onResponderGrant,
