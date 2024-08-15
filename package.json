@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "react": "16.8.3",
-    "react-native": "0.59.3",
+    "react-native": "0.69.12",
     "@babel/core": "^7.4.3",
     "@babel/runtime": "^7.4.3",
     "babel-jest": "^24.7.1",
