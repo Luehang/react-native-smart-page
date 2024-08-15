@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import {
     View,
-    ViewPropTypes,
     InteractionManager,
     Dimensions
 } from "react-native";
@@ -27,9 +26,10 @@ export default class SmartPage extends PureComponent {
         loadMinimalSize: PropTypes.number,
         loadMinimalLoader: PropTypes.element,
         pageMargin: PropTypes.number,
-        scrollViewStyle: ViewPropTypes
-            ? ViewPropTypes.style
-            : View.propTypes.style,
+        scrollViewStyle: PropTypes.oneOfType([
+            PropTypes.object,
+            PropTypes.array,
+        ]),
         scrollEnabled: PropTypes.bool,
         sensitiveScroll: PropTypes.bool,
         onPageSelected: PropTypes.func,
